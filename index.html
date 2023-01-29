@@ -3,27 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/style.css"/>
-    <title>Momentum App</title>
+    <title>My Momentum App</title>
+    <script src='dist/index.global.js'></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+    </script>
   </head>
   <body>
-    <div id="weather">
-        <span></span>
-        <span></span>
+    <div class="bigBox">
+      <div class="box1">
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+        <h1 id="clock">00:00:00</h1>
+        <div class="miniBox1">
+          <div id='calendar'></div>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="miniBox2">
+          <form class="hidden" id="login-form">
+            <input 
+            id="input1"
+            required 
+            maxlength="5"
+            type="text" 
+            placeholder=" What is your name?"/>
+            <button>Log In</button>
+          </form>
+          <h1 id="greeting" class="hidden"></h1>
+        </div>
+        <div class="miniBox3">
+          <form id="todo-form">
+            <input id="input2" type="text" placeholder=" Write a To Do and  Press Enter" required/>
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
     </div>
-    <h1 id="clock">00:00:00</h1>
-    <form class="hidden" id="login-form">
-        <input 
-        required 
-        maxlength="15"
-        type="text" 
-        placeholder="What is your name?"/>
-        <button>Log In</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and  Press Enter" required/>
-    </form>
-    <ul id="todo-list"></ul>
     <div id="quote">
         <span></span>
         <span></span>
@@ -31,7 +55,6 @@
     <script src="js/clock.js"></script>
     <script src="js/greeting.js"></script>
     <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
   </body>
