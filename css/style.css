@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 * {
     box-sizing: border-box;
+    font-family: 'Jua', sans-serif;
 }
 body {
     height: 100vh;
@@ -37,18 +38,17 @@ body {
     padding-top: 20px;
     padding-right: 10px;
     border-radius: 20px;
-    font-family: 'Jua', sans-serif;
+    color: #1E2B37;
 }
 #clock {
     height: 100px;
     width: 450px;
     text-align: center;
-    font-size: 25pt;
+    font-size: 26pt;
     padding-top: 20px;
     border-radius: 20px;
     background-color: rgba(249, 205, 230, 0.5);
-    color: rgba(0, 0, 0, 0.8);
-    font-family: 'Jua', sans-serif;
+    color: #1E2B37;
 }
 .miniBox1 {
     border: 4px solid rgb(160, 129, 206);
@@ -59,6 +59,7 @@ body {
     justify-content: center;
     padding: 20px;
     background-color: rgba(160, 129, 206, 0.5);
+    color: #1E2B37;
 }
 .miniBox2 {
     height: 200px;
@@ -69,7 +70,8 @@ body {
     border-radius: 20px;
     border: 4px solid rgb(244, 168, 190);
     background-color: rgba(244, 168, 190, 0.5);
-    color: rgba(0, 0, 0, 0.8);
+    color: #1E2B37;
+    padding-top: 40px;
 }
 #input1 {
     width: 200px;
@@ -84,15 +86,11 @@ button {
     background-color: rgb(244, 168, 190);
     border-color: rgb(0, 0, 0, 0.5);
     color: white;
-    font-family: 'Jua', sans-serif;
     font-weight: 550;
     cursor: pointer;  
 }
 button:active {
     color: rgb(0, 0, 0, 0.5);
-}
-#greeting {
-    font-family: 'Jua', sans-serif;
 }
 .miniBox3 {
     height: 600px;
@@ -104,6 +102,9 @@ button:active {
     flex-direction: column;
     padding: 30px;
     overflow: auto;
+    color: #1E2B37;
+    font-weight: 600;
+    font-size: 14pt;
 }
 .miniBox3::-webkit-scrollbar {
     height: 15px;
@@ -132,8 +133,10 @@ button:active {
 #quote {
     position: absolute;
     bottom: 15px;
-    font-size: larger;
+    font-size: 16pt;
+    font-weight: 600;
     margin-left: 20px;
+    color: #1E2B37;
 }
 .hidden{
     display: none;
