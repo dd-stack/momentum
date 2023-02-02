@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/style.css"/>
     <title>My Momentum App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
     <script src='dist/index.global.js'></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -24,16 +25,27 @@
         </div>
         <h1 id="clock">00 : 00 : 00</h1>
         <div class="miniBox1">
-          <div style="float: center; height : 500px; width : 400px;" id='calendar'></div>
+          <div style="float: center; height : 500px; width : 400px;" id='calendar'></div> 
         </div>
       </div>
       <div class="box2">
         <div class="miniBox2">
+          <div class="icon">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+              <i class="fa-solid fa-envelope" style="font-size: 30px; color: #1e2b37b0;"></i>  
+            </a>
+            <a href="https://github.com/" target="_blank">
+              <i class="fa-brands fa-github" style="font-size: 30px; color: #1e2b37b0;"></i>
+            </a>
+            <a href="https://ddppp.tistory.com/" target="_blank">
+              <i class="fa-solid fa-book" style="font-size: 30px; color: #1e2b37b0;"></i>
+            </a>
+          </div>
           <form class="hidden" id="login-form">
             <input 
             id="input1"
             required 
-            maxlength="5"
+            maxlength="10"
             type="text" 
             placeholder=" What is your name?"/>
             <button>Log In</button>

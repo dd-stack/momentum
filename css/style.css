@@ -53,9 +53,9 @@ body {
 }
 .miniBox1 {
     border: 4px solid rgb(160, 129, 206);
+    border-radius: 20px;
     height: 600px;
     width: 450px;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -63,30 +63,38 @@ body {
     color: #1E2B37;
 }
 .miniBox2 {
+    border: 4px solid rgb(244, 168, 190);
+    border-radius: 20px;
     height: 200px;
     width: 450px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    border: 4px solid rgb(244, 168, 190);
     background-color: rgba(244, 168, 190, 0.5);
     color: #1E2B37;
     padding-top: 40px;
     text-shadow: -2px 0 rgb(244, 168, 190), 0 2px rgb(244, 168, 190), 2px 0 rgb(244, 168, 190), 0 -2px rgb(244, 168, 190);
 }
+.icon {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
 #input1 {
+    border-color: rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
     width: 200px;
     height: 30px;
-    border-radius: 10px;
-    border-color: rgb(0, 0, 0, 0.5);
+    margin: 25px;
 }
 button {
+    border-color: rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
     width: 60px;
     height: 30px;
-    border-radius: 10px;
     background-color: rgb(244, 168, 190);
-    border-color: rgb(0, 0, 0, 0.5);
     color: white;
     font-weight: 550;
     cursor: pointer;  
